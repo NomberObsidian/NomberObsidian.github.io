@@ -27,16 +27,17 @@
           : `<span class="logo"><img src="${esc(p.image)}" alt="" width="58" height="58"></span>`)
       : "";
     const soon = (p.links && p.links.length) ? `<div class="links">${links(p.links)}</div>` : "";
+    const status = p.status ? `<span class="status">${esc(tr(p.status))}</span>` : "";
     return `<article class="card reveal ${cls}" style="--acc:${esc(p.accent || "#a77bff")}" tabindex="-1">
-      <div class="card-in">${p.status ? `<span class="status">${esc(tr(p.status))}</span>` : ""}
-        <div class="card-top">${img}<div><h3>${esc(title)}</h3><p class="tag">${esc(tr(p.tagline))}</p></div></div>
+      <div class="card-in">
+        <div class="card-top">${img}<div class="card-head"><div class="card-title-row"><h3>${esc(title)}</h3>${status}</div><p class="tag">${esc(tr(p.tagline))}</p></div></div>
         <div class="more"><div><p>${esc(tr(p.description))}</p></div></div>
         ${soon}
       </div></article>`;
   };
 
   const secretCard = () => `<article class="card secret full reveal" tabindex="0" aria-label="${esc(T("secret.aria"))}">
-    <div class="card-in"><span class="status">${esc(T("secret.grif"))}</span><h3>████████</h3>
+    <div class="card-in"><div class="card-title-row"><h3>████████</h3><span class="status">${esc(T("secret.grif"))}</span></div>
     <span class="redact" style="width:92%"></span><span class="redact" style="width:74%"></span><span class="redact" style="width:40%"></span>
     <span class="stamp">${esc(T("secret.stamp"))}</span><div class="denied">${esc(T("secret.denied"))}</div></div></article>`;
 
@@ -71,6 +72,61 @@
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   document.addEventListener("click", e => { const c = e.target.closest(".card"); if (c && !e.target.closest("a")) c.classList.toggle("open"); });
+
+
+  const copyText = async (text) => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch (e) {}
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.cssText = "position:fixed;left:-9999px;top:0";
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      const ok = document.execCommand("copy");
+      ta.remove();
+      return !!ok;
+    } catch (e) {
+      return false;
+    }
+  };
+  let toastTimer;
+  const showToast = (msg) => {
+    const el = $("#toast");
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove("show"), 2200);
+  };
+  document.querySelectorAll(".copy-mail").forEach(a => {
+    a.addEventListener("click", async ev => {
+      ev.preventDefault();
+      const text = a.dataset.copy || "NomberContact@proton.me";
+      const ok = await copyText(text);
+      const label = a.querySelector("small");
+      if (ok) {
+        showToast(T("contact.copied"));
+        if (label) {
+          const prev = label.textContent;
+          label.textContent = T("contact.copied");
+          a.classList.add("copied");
+          setTimeout(() => {
+            a.classList.remove("copied");
+            if (label.textContent === T("contact.copied")) label.textContent = T("contact.mail");
+          }, 2200);
+        }
+      } else {
+        showToast(T("contact.copyfail") + " · " + text);
+        try { window.prompt(T("contact.copyfail"), text); } catch (e) {}
+      }
+    });
+  });
 
   if (reduce) return;
 
