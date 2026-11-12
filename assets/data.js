@@ -11,8 +11,8 @@ window.NOMBER_OBSIDIAN = {
       title: "NF-Calendar",
       tagline: { ru: "Календарь для Obsidian", en: "Calendar for Obsidian" },
       description: {
-        ru: "Календарь с ежедневными, недельными и месячными заметками, шаблонами по правилам, важными датами, праздниками и статистикой.",
-        en: "Calendar view with daily, weekly and monthly notes, rule-based templates, important days, holidays and statistics."
+        ru: "Продвинутая автоматизация по датам для Obsidian: шаблоны по правилам, повторяющиеся события, свои праздники, перенос задач и встроенная аналитика продуктивности.",
+        en: "Advanced date-based automation for Obsidian: rule-based templates, recurring events, custom holidays, task carryover and built-in productivity analytics."
       },
       status: { ru: "Релиз v1.1.0", en: "Released v1.1.0" },
       image: "assets/nf-calendar.svg",
