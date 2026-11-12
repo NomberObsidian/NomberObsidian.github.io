@@ -3,7 +3,7 @@
 window.I18N = {
   ru: {
     "meta.title": "NOMBER — NomberObsidian · Плагины для Obsidian",
-    "meta.desc": "NomberObsidian — плагины NOMBER для Obsidian. NF-Calendar скоро будет анонсирован, остальные материалы засекречены.",
+    "meta.desc": "NomberObsidian — плагины NOMBER для Obsidian. NF-Calendar уже вышел, остальные материалы засекречены.",
     "og.desc": "Плагины для Obsidian. Хранилище отдела NomberObsidian.",
     "skip": "Перейти к плагинам", "a.top": "NomberObsidian — наверх", "a.sections": "Разделы", "a.lang": "Язык сайта",
     "nav.plugins": "Плагины", "nav.contact": "Связь", "nav.blog": "Блог",
@@ -39,7 +39,7 @@ window.I18N = {
   },
   en: {
     "meta.title": "NOMBER — NomberObsidian · Plugins for Obsidian",
-    "meta.desc": "NomberObsidian — NOMBER's plugins for Obsidian. NF-Calendar will be announced soon; other files remain classified.",
+    "meta.desc": "NomberObsidian — NOMBER's plugins for Obsidian. NF-Calendar is out; other files remain classified.",
     "og.desc": "Plugins for Obsidian. The NomberObsidian vault.",
     "skip": "Skip to plugins", "a.top": "NomberObsidian — back to top", "a.sections": "Sections", "a.lang": "Site language",
     "nav.plugins": "Plugins", "nav.contact": "Contact", "nav.blog": "Blog",

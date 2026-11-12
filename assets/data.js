@@ -11,13 +11,16 @@ window.NOMBER_OBSIDIAN = {
       title: "NF-Calendar",
       tagline: { ru: "Календарь для Obsidian", en: "Calendar for Obsidian" },
       description: {
-        ru: "Календарный плагин для Obsidian. Анонс — совсем скоро.",
-        en: "A calendar plugin for Obsidian. The announcement is coming soon."
+        ru: "Календарь с ежедневными, недельными и месячными заметками, шаблонами по правилам, важными датами, праздниками и статистикой.",
+        en: "Calendar view with daily, weekly and monthly notes, rule-based templates, important days, holidays and statistics."
       },
-      status: { ru: "Скоро анонс", en: "Coming soon" },
+      status: { ru: "Релиз v1.1.0", en: "Released v1.1.0" },
       image: "assets/nf-calendar.svg",
       accent: "#a77bff",
-      links: []
+      links: [
+        { label: "Obsidian", url: "https://community.obsidian.md/plugins/nf-calendar", icon: "obs" },
+        { label: "GitHub", url: "https://github.com/NOMBER/NF-Calendar", icon: "gh" }
+      ]
     },
     { id: "x2", redacted: true },
     { id: "x3", redacted: true },
