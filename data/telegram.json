@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T22:11:25Z",
+  "updated": "2026-11-13T18:29:27Z",
   "channel": {
     "name": "Nomber | Obsidian Plugins & More",
     "username": "NomberObsidian",
@@ -8,5 +8,19 @@
     "avatar": "data/media/avatar.jpg",
     "subscribers": "9"
   },
-  "posts": []
+  "posts": [
+    {
+      "id": 4,
+      "url": "https://t.me/NomberObsidian/4",
+      "date": "2026-11-13T16:30:01+00:00",
+      "views": "3",
+      "text_html": "✅ <b>NF-Calendar Is Now Available!</b>!<br><br>I'm pleased to announce the first public release of NF-Calendar, an independent plugin for Obsidian designed to make managing daily notes more flexible and automated, completely eliminating any routine involved in their creation.<br><br>Going beyond the traditional calendar, NF-Calendar offers smart template rules, highlighting of specific important days right on the calendar, automatic note creation, activity statistics, and everything you've been missing in all the currently popular calendar plugins.<br><br>Whether you're organizing daily tasks, managing projects, or creating your own workflows for note-taking, NF-Calendar gives you complete control over how your daily notes are created and organized.<br><br>Everything you might need to work with them is included in this plugin. It replaces a whole series of existing plugins and implements features that are currently unavailable among community plugins.<br><br>This is just the beginning, and I'm looking forward to the project’s future development!<br><br>🗿 Try NF-Calendar: <a href=\"https://community.obsidian.md/plugins/nf-calendar\" target=\"_blank\" rel=\"noopener noreferrer\">Obsidian.md</a> | 🌐 <a href=\"https://github.com/NOMBER/NF-Calendar\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub Repository</a><br><br>/ <code>obsidian://show-plugin?id=nf-calendar</code><br><br>#Obsidian | #SecondBrain",
+      "photos": [
+        "data/media/4-p0.jpg"
+      ],
+      "videos": [],
+      "document": "",
+      "type": "photo"
+    }
+  ]
 }
