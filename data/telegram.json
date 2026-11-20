@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T17:14:36Z",
+  "updated": "2026-11-20T23:19:43Z",
   "channel": {
     "name": "Nomber | Obsidian Plugins & More",
     "username": "NomberObsidian",
@@ -10,11 +10,24 @@
   },
   "posts": [
     {
+      "id": 6,
+      "url": "https://t.me/NomberObsidian/6",
+      "date": "2026-11-20T20:52:58+00:00",
+      "views": "3",
+      "text_html": "<b>HELLVAULT is officially out! </b><b>🎮</b><b>💜</b><br><br>Who said Obsidian was only meant for taking notes?<br><br>My new open-source plugin turns your vault into a Doom-style FPS, where notes become monsters, broken links come alive, and a mysterious corruption threatens to erase everything!<br><br>Explore 5 unique zones, fight bosses, collect obsidian shards, and uncover hidden secrets. Choose between 3 game modes, wield 3 weapons, and unlock 21 achievements!<br><br>Play completely offline, with English and Russian support.<br><br>🗿 Download: <a href=\"https://community.obsidian.md/plugins/vault-shards\" target=\"_blank\" rel=\"noopener noreferrer\">Obsidian.md</a> | 🌐 <a href=\"https://github.com/NOMBER/HELLVAULT\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub Repository</a><br><br>#Obsidian | #Gaming | #SecondBrain",
+      "photos": [
+        "data/media/6-p0.jpg"
+      ],
+      "videos": [],
+      "document": "",
+      "type": "photo"
+    },
+    {
       "id": 5,
       "url": "https://t.me/NomberObsidian/5",
       "date": "2026-11-20T08:59:58+00:00",
       "views": "3",
-      "text_html": "🎮 <b>Mini Old Games is officially out!</b><br><br>Who said Obsidian has to be all about productivity?<br><br>My new plugin brings <b>12 classic mini-games</b> straight into your vault, including Snake, Tetris, 2048, Minesweeper, and more!<br><br>Play offline, choose your difficulty, track your stats, and unlock <b>67 achievements</b>. No ads, no accounts, just a little nostalgia whenever you need a break.<br><br>Available on desktop and mobile, with English and Russian support.<br><br>🗿 <b>Download:</b> <a href=\"https://community.obsidian.md/plugins/good-old-games\" target=\"_blank\" rel=\"noopener noreferrer\">Obsidian.md</a> | 🌐 <a href=\"https://github.com/NOMBER/Mini-Old-Games\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub Repository</a><br><br>/ <code>obsidian://show-plugin?id=good-old-games</code><br><br>#Obsidian | #SecondBrain",
+      "text_html": "<b>Mini Old Games is officially out!</b> 🎮<br><br>Who said Obsidian has to be all about productivity?<br><br>My new plugin brings <b>12 classic mini-games</b> straight into your vault, including Snake, Tetris, 2048, Minesweeper, and more!<br><br>Play offline, choose your difficulty, track your stats, and unlock <b>67 achievements</b>. No ads, no accounts, just a little nostalgia whenever you need a break.<br><br>Available on desktop and mobile, with English and Russian support.<br><br>🗿 <b>Download:</b> <a href=\"https://community.obsidian.md/plugins/good-old-games\" target=\"_blank\" rel=\"noopener noreferrer\">Obsidian.md</a> | 🌐 <a href=\"https://github.com/NOMBER/Mini-Old-Games\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub Repository</a><br><br>/ <code>obsidian://show-plugin?id=good-old-games</code><br><br>#Obsidian | #SecondBrain",
       "photos": [
         "data/media/5-p0.jpg"
       ],
