@@ -187,7 +187,8 @@ img{max-width:100%;display:block}
   .brand{gap:0}
   .nav-donate{margin-left:0;padding:8px 10px}
   .nav-donate span{display:none}
-  .nav-blog{padding:7px 10px}
+  .nav-blog,.nav-games{padding:7px 10px}
+  .nav{gap:4px}
   .hero{padding:114px 16px 24px;min-height:0}
   .kicker{letter-spacing:.1em;font-size:11px}
   .glitch{letter-spacing:.08em}
@@ -197,16 +198,21 @@ img{max-width:100%;display:block}
   .lang{margin-left:0;margin-right:0}
   .foot-cols{grid-template-columns:1fr}
 }
+@media (max-width:420px){
+  .nav-games span,.nav-blog span{display:none}
+  .nav-games,.nav-blog{padding:7px 8px}
+}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none}
 }
 
-/* nav: blog button (always visible, including mobile) */
-.nav-blog{display:inline-flex;align-items:center;gap:7px;flex:none;text-decoration:none;font-size:14px;font-weight:600;padding:8px 12px;border-radius:10px;color:#e8dcff;background:linear-gradient(135deg,rgba(167,123,255,.22),rgba(92,40,200,.12));border:1px solid color-mix(in srgb,var(--vi) 50%,transparent);box-shadow:0 0 16px -6px var(--vi);transition:.2s}
-.nav-blog svg{width:16px;height:16px;fill:currentColor;flex:none}
+/* nav: games + blog buttons (always visible, including mobile) */
+.nav-blog,.nav-games{display:inline-flex;align-items:center;gap:7px;flex:none;text-decoration:none;font-size:14px;font-weight:600;padding:8px 12px;border-radius:10px;color:#e8dcff;background:linear-gradient(135deg,rgba(167,123,255,.22),rgba(92,40,200,.12));border:1px solid color-mix(in srgb,var(--vi) 50%,transparent);box-shadow:0 0 16px -6px var(--vi);transition:.2s}
+.nav-blog svg,.nav-games svg{width:16px;height:16px;fill:currentColor;flex:none}
 .nav-blog:hover,.nav-blog.on{background:linear-gradient(135deg,#37aee2,#1e96c8);color:#fff;border-color:transparent;box-shadow:0 0 20px -4px #37aee2}
+.nav-games:hover,.nav-games.on{background:linear-gradient(135deg,#ff8a1f,#ff5a2d);color:#fff;border-color:transparent;box-shadow:0 0 20px -4px #ff8a1f}
 
 /* blog page */
 .blog-hero{position:relative;z-index:2;padding:130px 24px 20px;display:flex;justify-content:center}
@@ -273,4 +279,41 @@ img{max-width:100%;display:block}
   .blog-cta-note{max-width:none}
   .feed-wrap{width:calc(100% - 24px);padding:24px 0 60px}
   .post-body{padding:14px 14px 12px}
+}
+
+/* home teaser to /games — compact, sits under the plugin list */
+.games-teaser{display:flex;align-items:center;gap:12px;margin-top:14px;padding:11px 14px;border-radius:16px;text-decoration:none;border:1px solid color-mix(in srgb,#ff8a1f 35%,var(--line));background:linear-gradient(135deg,rgba(255,138,31,.12),rgba(167,123,255,.08));transition:.25s}
+.games-teaser:hover{border-color:#ff8a1f;box-shadow:0 0 24px -8px #ff8a1f;transform:translateY(-1px)}
+.games-teaser-num{font-family:var(--mono);color:var(--cy);font-size:12px;letter-spacing:.14em;flex:none}
+.games-teaser-text{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1}
+.games-teaser-text strong{font-size:15px;letter-spacing:.01em;line-height:1.2}
+.games-teaser-text small{font-size:12px;color:var(--mut);line-height:1.35}
+.games-teaser-go{flex:none;color:#ffb067;font-size:18px;transition:transform .2s}
+.games-teaser:hover .games-teaser-go{transform:translateX(3px)}
+
+/* games page */
+.games-hero{position:relative;z-index:2;padding:130px 24px 8px;display:flex;justify-content:center;text-align:center}
+.games-hero-inner{width:min(980px,100%)}
+.games-hero h1{font-size:clamp(36px,5.4vw,64px);font-weight:900;letter-spacing:.08em;line-height:1;margin:.12em 0 .2em;background:linear-gradient(180deg,#fff 20%,#c5b4f0);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px rgba(167,123,255,.3)}
+.games-lead{color:#c4c9da;font-size:clamp(15px,1.6vw,18px);max-width:34em;margin:0 auto;line-height:1.5}
+.games-wrap{position:relative;z-index:2;width:min(980px,calc(100% - 40px));margin:0 auto;padding:28px 0 80px}
+.games-list{display:flex;flex-direction:column;gap:28px}
+.game-card{--acc:var(--vi);border-radius:24px;padding:1px;background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 65%,transparent),transparent 42%,color-mix(in srgb,var(--acc) 35%,transparent)) border-box;transition:transform .25s ease,box-shadow .35s}
+.game-card:hover,.game-card:focus-within{box-shadow:0 0 48px -8px var(--acc),0 30px 60px -20px #000;transform:translateY(-2px)}
+.game-card-in{border-radius:23px;overflow:hidden;background:var(--glass);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);border:1px solid var(--line)}
+.game-cover{display:block;background:#0a0c14}
+.game-cover img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 46%;display:block}
+.game-body{padding:22px 24px 24px}
+.game-title-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.game-title-row h2{font-size:clamp(22px,3vw,32px);letter-spacing:.01em;line-height:1.15;margin:0}
+.game-card .tag{margin-top:6px;font-size:13.5px}
+.game-note{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.game-desc{font-size:15px;color:#d0d4e2;line-height:1.6;margin-top:10px;max-width:52em}
+.game-card .links{margin-top:16px}
+.game-card .btn{font-size:14px;padding:9px 14px}
+@media (max-width:640px){
+  .games-hero{padding:108px 16px 4px}
+  .games-wrap{width:calc(100% - 24px);padding:18px 0 60px}
+  .game-body{padding:16px 16px 18px}
+  .games-list{gap:20px}
 }

@@ -6,7 +6,7 @@ window.I18N = {
     "meta.desc": "NomberObsidian — плагины NOMBER для Obsidian. NF-Calendar уже вышел, остальные материалы засекречены.",
     "og.desc": "Плагины для Obsidian. Хранилище отдела NomberObsidian.",
     "skip": "Перейти к плагинам", "a.top": "NomberObsidian — наверх", "a.sections": "Разделы", "a.lang": "Язык сайта",
-    "nav.plugins": "Плагины", "nav.contact": "Связь", "nav.blog": "Блог",
+    "nav.plugins": "Плагины", "nav.contact": "Связь", "nav.blog": "Блог", "nav.games": "Игры",
     "donate": "Поддержать",
     "hero.kicker": "// nomberobsidian.github.io — хранилище плагинов",
     "hero.sub": "Плагины для Obsidian",
@@ -35,14 +35,26 @@ window.I18N = {
     "blog.video": "Видео",
     "blog.updated": "Обновлено",
     "blog.subs": "подписчиков",
-    "blog.doc": "Файл"
+    "blog.doc": "Файл",
+    "games.meta.title": "Игры — NomberObsidian · игры внутри Obsidian",
+    "games.meta.desc": "Игры NOMBER внутри Obsidian: Mini Old Games и HELLVAULT.",
+    "games.og.desc": "Игры для Obsidian от NOMBER: Mini Old Games и HELLVAULT.",
+    "games.skip": "Перейти к играм",
+    "games.kicker": "// nomberobsidian.github.io — игры внутри Obsidian",
+    "games.t": "Игры",
+    "games.sub": "Игры, в которые можно играть прямо в хранилище Obsidian.",
+    "games.desktop": "только для компьютера",
+    "games.teaser.t": "Игры",
+    "games.teaser.p": "Mini Old Games и HELLVAULT уже вышли",
+    "games.cover.mini": "Обложка Mini Old Games: детектив NOMBER показывает двенадцать классических мини-игр внутри Obsidian",
+    "games.cover.hellvault": "Обложка HELLVAULT: детектив NOMBER представляет Doom-подобный шутер внутри Obsidian"
   },
   en: {
     "meta.title": "NOMBER — NomberObsidian · Plugins for Obsidian",
     "meta.desc": "NomberObsidian — NOMBER's plugins for Obsidian. NF-Calendar is out; other files remain classified.",
     "og.desc": "Plugins for Obsidian. The NomberObsidian vault.",
     "skip": "Skip to plugins", "a.top": "NomberObsidian — back to top", "a.sections": "Sections", "a.lang": "Site language",
-    "nav.plugins": "Plugins", "nav.contact": "Contact", "nav.blog": "Blog",
+    "nav.plugins": "Plugins", "nav.contact": "Contact", "nav.blog": "Blog", "nav.games": "Games",
     "donate": "Support",
     "hero.kicker": "// nomberobsidian.github.io — plugin vault",
     "hero.sub": "Plugins for Obsidian",
@@ -71,7 +83,19 @@ window.I18N = {
     "blog.video": "Video",
     "blog.updated": "Updated",
     "blog.subs": "subscribers",
-    "blog.doc": "File"
+    "blog.doc": "File",
+    "games.meta.title": "Games — NomberObsidian · games inside Obsidian",
+    "games.meta.desc": "NOMBER's games inside Obsidian: Mini Old Games and HELLVAULT.",
+    "games.og.desc": "Games for Obsidian by NOMBER: Mini Old Games and HELLVAULT.",
+    "games.skip": "Skip to the games",
+    "games.kicker": "// nomberobsidian.github.io — games inside Obsidian",
+    "games.t": "Games",
+    "games.sub": "Games you can play right inside your Obsidian vault.",
+    "games.desktop": "desktop only",
+    "games.teaser.t": "Games",
+    "games.teaser.p": "Mini Old Games and HELLVAULT are out now",
+    "games.cover.mini": "Mini Old Games cover: the NOMBER detective presenting twelve classic mini-games inside Obsidian",
+    "games.cover.hellvault": "HELLVAULT cover: the NOMBER detective presenting a Doom-like shooter inside Obsidian"
   }
 };
 /* Язык: сохранённый выбор → языки браузера (ru/be/uk/kk → RU) → EN */
@@ -87,9 +111,9 @@ window.applyI18n = function (lang, root) {
   root.querySelectorAll("[data-i18n]").forEach(el => { const v = d[el.dataset.i18n]; if (v != null) el.textContent = v; });
   root.querySelectorAll("[data-i18n-attr]").forEach(el => el.dataset.i18nAttr.split(";").forEach(p => { const [a, k] = p.split(":"); if (d[k] != null) el.setAttribute(a, d[k]); }));
   const page = document.documentElement.dataset.page || "home";
-  const titleKey = page === "blog" ? "blog.meta.title" : "meta.title";
-  const descKey = page === "blog" ? "blog.meta.desc" : "meta.desc";
-  const ogKey = page === "blog" ? "blog.og.desc" : "og.desc";
+  const titleKey = d[page + ".meta.title"] ? page + ".meta.title" : "meta.title";
+  const descKey = d[page + ".meta.desc"] ? page + ".meta.desc" : "meta.desc";
+  const ogKey = d[page + ".og.desc"] ? page + ".og.desc" : "og.desc";
   if (d[titleKey] && document.querySelector('meta[name="description"]')) {
     document.title = d[titleKey];
     document.querySelector('meta[name="description"]').content = d[descKey] || d["meta.desc"];

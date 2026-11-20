@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru" data-page="games">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Игры — NomberObsidian · игры внутри Obsidian</title>
+<meta name="description" content="Игры NOMBER внутри Obsidian: Mini Old Games и HELLVAULT.">
+<link rel="canonical" href="https://nomberobsidian.github.io/games/">
+<meta name="theme-color" content="#05050a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NomberObsidian">
+<meta property="og:title" content="Игры — NomberObsidian">
+<meta property="og:description" content="Игры для Obsidian от NOMBER: Mini Old Games и HELLVAULT.">
+<meta property="og:url" content="https://nomberobsidian.github.io/games/">
+<meta property="og:image" content="https://nomberobsidian.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Игры — NomberObsidian">
+<meta name="twitter:description" content="Игры для Obsidian от NOMBER: Mini Old Games и HELLVAULT.">
+<meta name="twitter:image" content="https://nomberobsidian.github.io/assets/og.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=10">
+<script src="../assets/i18n.js?v=10"></script>
+</head>
+<body>
+<a class="skip" href="#games" data-i18n="games.skip">Перейти к играм</a>
+<div class="bg" aria-hidden="true"><div class="bg-city" data-depth="6"></div><canvas id="fx"></canvas></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/" aria-label="NomberObsidian — наверх" data-i18n-attr="aria-label:a.top"><img src="../assets/favicon.svg" alt="" width="28" height="28"><span>Nomber<b>Obsidian</b></span></a>
+  <nav aria-label="Разделы" data-i18n-attr="aria-label:a.sections">
+    <a href="/#plugins" data-i18n="nav.plugins">Плагины</a>
+    <a href="/#contact" data-i18n="nav.contact">Связь</a>
+  </nav>
+  <a class="nav-games on" href="/games" data-i18n-attr="aria-label:nav.games"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 6.5h9.6A5.3 5.3 0 0 1 22 11.7v2.1a5.3 5.3 0 0 1-5.2 5.2H7.2A5.3 5.3 0 0 1 2 13.8v-2.1A5.3 5.3 0 0 1 7.2 6.5zm1.6 3.3H7.2v1.6H5.6v1.6h1.6v1.6h1.6v-1.6h1.6v-1.6H8.8zm6.3 1.1a1.15 1.15 0 1 0 .1 2.3 1.15 1.15 0 0 0-.1-2.3zm2.5 2.2a1.15 1.15 0 1 0 0 2.3 1.15 1.15 0 0 0 0-2.3z"/></svg><span data-i18n="nav.games">Игры</span></a>
+  <a class="nav-blog" href="/blog" data-i18n-attr="aria-label:nav.blog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.6l-4.9-1.5c-1.1-.3-1.1-1 .2-1.6L20.5 3c.9-.3 1.7.2 1.4 1.3z"/></svg><span data-i18n="nav.blog">Блог</span></a>
+  <a class="nav-donate" href="https://donatre.github.io/" target="_blank" rel="noopener">♥ <span data-i18n="donate">Поддержать</span></a>
+  <div class="lang" role="group" aria-label="Язык сайта" data-i18n-attr="aria-label:a.lang"><button type="button" data-lang="ru">RU</button><i>|</i><button type="button" data-lang="en">EN</button></div>
+</header>
+
+<main>
+  <section class="games-hero" aria-labelledby="games-title">
+    <div class="games-hero-inner reveal">
+      <p class="kicker" data-i18n="games.kicker">// nomberobsidian.github.io — игры внутри Obsidian</p>
+      <h1 id="games-title" data-i18n="games.t">Игры</h1>
+      <p class="games-lead" data-i18n="games.sub">Игры, в которые можно играть прямо в хранилище Obsidian.</p>
+    </div>
+  </section>
+
+  <div class="games-wrap" id="games">
+    <div class="games-list" id="game-list"></div>
+  </div>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="foot-cols">
+    <section class="foot-block" aria-labelledby="con-t">
+      <h2 id="con-t" class="foot-title" data-i18n="contact.t">Связь</h2>
+      <ul class="socials">
+        <li><a class="ic-tg" href="https://t.me/Nomboerto" target="_blank" rel="noopener"><i class="ico tg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.6l-4.9-1.5c-1.1-.3-1.1-1 .2-1.6L20.5 3c.9-.3 1.7.2 1.4 1.3z"/></svg></i><span>@Nomboerto<small data-i18n="contact.tg">написать в Telegram</small></span></a></li>
+        <li><a class="ic-tg" href="https://t.me/NomberObsidian" target="_blank" rel="noopener"><i class="ico tg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.6l-4.9-1.5c-1.1-.3-1.1-1 .2-1.6L20.5 3c.9-.3 1.7.2 1.4 1.3z"/></svg></i><span>@NomberObsidian<small data-i18n="contact.channel">канал в Telegram</small></span></a></li>
+        <li><a class="ic-mail copy-mail" href="mailto:NomberContact@proton.me" data-copy="NomberContact@proton.me" data-i18n-attr="aria-label:contact.copyaria"><i class="ico mail"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg></i><span>NomberContact@proton.me<small data-i18n="contact.mail">нажмите, чтобы скопировать</small></span></a></li>
+      </ul>
+    </section>
+    <section class="foot-block hub-block" aria-labelledby="hub-t">
+      <h2 id="hub-t" class="foot-title" data-i18n="hub.t">Экосистема</h2>
+      <a class="hub-card" href="https://nomberprojects.github.io/">
+        <span class="hub-kicker" data-i18n="hub.kicker">хаб всех проектов</span>
+        <strong>nomberprojects.github.io</strong>
+        <small data-i18n="hub.p">Вернуться в главный штаб NOMBER</small>
+      </a>
+      <ul class="socials solo">
+        <li><a href="https://github.com/NomberObsidian" target="_blank" rel="noopener"><i class="ico gh"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></i><span>GitHub<small>github.com/NomberObsidian</small></span></a></li>
+      </ul>
+    </section>
+  </div>
+  <p class="hub">© <span id="y">2026</span> NOMBER · <a href="https://nomberprojects.github.io/">nomberprojects.github.io</a></p>
+</footer>
+
+<script src="../assets/data.js?v=10"></script>
+<script src="../assets/games.js?v=10"></script>
+</body>
+</html>
