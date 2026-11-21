@@ -317,3 +317,19 @@ img{max-width:100%;display:block}
   .game-body{padding:16px 16px 18px}
   .games-list{gap:20px}
 }
+
+/* games: compact cards */
+.games-wrap{width:min(760px,calc(100% - 40px))}
+.games-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.game-card{border-radius:18px}
+.game-card-in{border-radius:17px}
+.game-cover img{aspect-ratio:16/10}
+.game-body{padding:12px 14px 14px}
+.game-title-row h2{font-size:18px}
+.game-card .tag{margin-top:3px;font-size:12px}
+.game-desc{font-size:13px;line-height:1.5;margin-top:6px}
+.game-card .links{margin-top:10px;gap:6px}
+.game-card .btn{font-size:12.5px;padding:6px 10px}
+.game-card .btn svg{width:14px;height:14px}
+@media (max-width:760px){.games-list{grid-template-columns:1fr;max-width:400px;margin:0 auto;gap:16px}.game-body{padding:12px 14px 14px}}
+.game-card{display:flex}.game-card-in{flex:1;display:flex;flex-direction:column}
