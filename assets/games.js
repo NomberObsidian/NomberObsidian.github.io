@@ -22,7 +22,7 @@
   const T = k => (window.I18N?.[lang] || {})[k] ?? k;
   const links = arr => (arr || []).map(l => `<a class="btn" href="${esc(l.url)}"${ext(l.url)}>${icon(l.icon)}${esc(tr(l.label))}</a>`).join("");
 
-  const coverAlt = id => T(id === "hellvault" ? "games.cover.hellvault" : "games.cover.mini");
+  const coverAlt = id => T("games.cover." + (id === "hellvault" ? "hellvault" : id === "obsigama" ? "obsigama" : "mini"));
 
   const card = g => {
     const title = tr(g.title);
@@ -48,7 +48,41 @@
     </article>`;
   };
 
+
+  const platformCard = p => {
+    if (!p) return "";
+    const title = tr(p.title);
+    const href = p.links?.[0]?.url;
+    const w = p.imageW || 1600, h = p.imageH || 900;
+    const img = p.image
+      ? `<img src="${esc(asset(p.image))}" alt="${esc(coverAlt(p.id))}" width="${w}" height="${h}">`
+      : "";
+    const cover = href
+      ? `<a class="platform-cover" href="${esc(href)}"${ext(href)} aria-label="${esc(title)}">${img}</a>`
+      : `<div class="platform-cover">${img}</div>`;
+    const chips = (p.features || []).map(f => `<li>${esc(tr(f))}</li>`).join("");
+    const listed = p.listedAs ? `<p class="platform-aka">${esc(tr(p.listedAs))}</p>` : "";
+    const note = p.note ? `<p class="platform-note">${esc(tr(p.note))}</p>` : "";
+    return `<article class="platform-card reveal" id="${esc(p.id)}" style="--acc:${esc(p.accent || "#a77bff")}">
+      <div class="platform-card-in">
+        ${cover}
+        <div class="platform-body">
+          <div class="platform-meta"><span class="platform-badge">${esc(tr(p.badge))}</span><span class="status">${esc(tr(p.status))}</span></div>
+          <h2>${esc(title)}</h2>
+          ${listed}
+          <p class="platform-tagline">${esc(tr(p.tagline))}</p>
+          <p class="platform-desc">${esc(tr(p.description))}</p>
+          ${chips ? `<ul class="platform-chips">${chips}</ul>` : ""}
+          ${note}
+          <div class="links">${links(p.links)}</div>
+        </div>
+      </div>
+    </article>`;
+  };
+
   const render = () => {
+    const slot = $("#platform-slot");
+    if (slot) slot.innerHTML = platformCard(D.platform);
     const list = $("#game-list");
     if (list) list.innerHTML = (D.games || []).map(card).join("");
     window.applyI18n && window.applyI18n(lang);

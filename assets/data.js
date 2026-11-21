@@ -4,6 +4,7 @@
    Плагины: id, title, tagline, description, status, image, accent, links[{label,url,icon}]
    redacted:true — полностью засекреченная карточка.
    Игры: id, title, tagline, description, status, image, accent, desktopOnly, links
+   Платформа: platform — отдельный герой на /games (не входит в games).
    ============================================================ */
 window.NOMBER_OBSIDIAN = {
   plugins: [
@@ -23,10 +24,57 @@ window.NOMBER_OBSIDIAN = {
         { label: "GitHub", url: "https://github.com/NOMBER/NF-Calendar", icon: "gh" }
       ]
     },
-    { id: "x2", redacted: true },
+    {
+      id: "obsigama",
+      title: "ObsiGama",
+      tagline: { ru: "Игровой хаб для Obsidian", en: "Game hub for Obsidian" },
+      description: {
+        ru: "Каталог игр, профиль игрока с друзьями, достижениями, значками и таблицами лидеров — и синхронизация результатов из подключённых игровых плагинов. Нужен онлайн-аккаунт.",
+        en: "Browse a game catalog, keep a player profile with friends, achievements, badges and leaderboards, and sync results from game plugins that opt in. Requires an online account."
+      },
+      status: { ru: "Релиз v1.0.4", en: "Released v1.0.4" },
+      image: "assets/obsigama-logo.webp",
+      accent: "#a77bff",
+      links: [
+        { label: "Obsidian", url: "https://community.obsidian.md/plugins/obsigama", icon: "obs" },
+        { label: "GitHub", url: "https://github.com/NOMBER/ObsiGama", icon: "gh" }
+      ]
+    },
     { id: "x3", redacted: true },
     { id: "x4", redacted: true }
   ],
+  platform: {
+    id: "obsigama",
+    title: "ObsiGama",
+    badge: { ru: "Платформа", en: "Platform" },
+    listedAs: { ru: "В каталоге Obsidian — GAMA Hub", en: "Listed in the Obsidian directory as GAMA Hub" },
+    tagline: { ru: "Социальный игровой хаб внутри Obsidian", en: "Social gaming hub inside Obsidian" },
+    description: {
+      ru: "Каталог игр, профиль игрока с друзьями, достижениями, значками и таблицами лидеров — и синхронизация результатов из подключённых игровых плагинов. Нужен онлайн-аккаунт.",
+      en: "Browse a game catalog, keep a player profile with friends, achievements, badges and leaderboards, and sync results from game plugins that opt in. Requires an online account."
+    },
+    status: { ru: "Релиз v1.0.4", en: "Released v1.0.4" },
+    image: "assets/obsigama.webp",
+    imageW: 1600,
+    imageH: 900,
+    accent: "#a77bff",
+    features: [
+      { ru: "Каталог", en: "Catalog" },
+      { ru: "Библиотека", en: "Library" },
+      { ru: "Достижения", en: "Achievements" },
+      { ru: "Таблицы лидеров", en: "Leaderboards" },
+      { ru: "Друзья", en: "Friends" },
+      { ru: "SDK для игр", en: "SDK for game plugins" }
+    ],
+    note: {
+      ru: "Mini Old Games и HELLVAULT уже умеют подключаться к ObsiGama.",
+      en: "Mini Old Games and HELLVAULT can already connect to ObsiGama."
+    },
+    links: [
+      { label: "Obsidian", url: "https://community.obsidian.md/plugins/obsigama", icon: "obs" },
+      { label: "GitHub", url: "https://github.com/NOMBER/ObsiGama", icon: "gh" }
+    ]
+  },
   games: [
     {
       id: "mini-old-games",
