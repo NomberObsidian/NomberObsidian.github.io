@@ -96,7 +96,7 @@
     if (photos.length) {
       const cls = photos.length > 1 ? "post-photos album" : "post-photos";
       media += `<div class="${cls}">` + photos.map((src, i) =>
-        `<a class="post-media" href="${esc(p.url)}" target="_blank" rel="noopener"><img src="${esc(src)}" alt="" loading="lazy"${i ? "" : ""}></a>`
+        `<a class="post-media" href="${esc(p.url)}" target="_blank" rel="noopener"><img src="${esc(asset(src))}" alt="" loading="lazy"></a>`
       ).join("") + `</div>`;
     }
     for (const v of videos) {
