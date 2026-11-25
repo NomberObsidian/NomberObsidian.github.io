@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T12:43:14Z",
+  "updated": "2026-11-25T22:27:55Z",
   "channel": {
     "name": "Nomber | Obsidian Plugins & More",
     "username": "NomberObsidian",
@@ -10,10 +10,32 @@
   },
   "posts": [
     {
+      "id": 9,
+      "url": "https://t.me/NomberObsidian/9",
+      "date": "2026-11-25T18:40:13+00:00",
+      "views": "3",
+      "text_html": "<blockquote><b>Mini Old Games v1.2.0 is getting a little upgrade! </b><b>🕹</b></blockquote><br>⠀<br>Ever opened Sudoku and wondered how to play? 😁<br>⠀<br>I'm adding a handy \"<b>?\" button</b> to all 12 mini-games! Each guide explains the objective, controls, and rules, so you can jump right into any game.<br>⠀<br>👾 The guides work in popups, tabs, and ObsiGama, with mobile-friendly controls. Your game automatically pauses while you're reading!<br>⠀⠀<br>🔗 <a href=\"https://github.com/NOMBER/Mini-Old-Games/releases/tag/1.2.0\" target=\"_blank\" rel=\"noopener noreferrer\">Release on github</a> / Just update it in Obsidian<br><br>#MiniGames@NomberObsidian | #Obsidian",
+      "photos": [],
+      "videos": [],
+      "document": "",
+      "type": "text"
+    },
+    {
+      "id": 8,
+      "url": "https://t.me/NomberObsidian/8",
+      "date": "2026-11-25T16:13:26+00:00",
+      "views": "3",
+      "text_html": "<blockquote><b>HELLVAULT v1.2.0 is officially live!</b> <b>🔫</b></blockquote><br>I've just released another update to my Doom-like FPS inside Obsidian!<br><br>🎧 + 3 original synthesized soundtracks, one for each game mode, with separate music and SFX controls.<br><br>💀 New kill feed with ObsiGama nicknames and a history of your last 1,000 kills. You can even open the notes linked to defeated enemies!<br><br>📁 Smarter note indexing with folder inclusion/exclusion settings, plus more precise volume and mouse sensitivity controls.<br><br>Your notes have never been this dangerous. 👾<br><br>🔗 <a href=\"https://github.com/NOMBER/HELLVAULT/releases/tag/1.2.0\" target=\"_blank\" rel=\"noopener noreferrer\">Release on github</a> / Just update it in Obsidian<br><br>#HellVault@NomberObsidian | #Obsidian",
+      "photos": [],
+      "videos": [],
+      "document": "",
+      "type": "text"
+    },
+    {
       "id": 7,
       "url": "https://t.me/NomberObsidian/7",
       "date": "2026-11-21T15:39:58+00:00",
-      "views": "4",
+      "views": "7",
       "text_html": "🎮 <b>Introducing ObsiGama - a gaming universe inside Obsidian!</b><br><br>Who said Obsidian should only be about notes and productivity?<br><br>I've been working on something pretty ambitious: ObsiGama, my own social gaming platform built directly into Obsidian. Think of it as a miniature Steam, but right inside your vault!<br><br>Discover games, build your personal library, create a player profile, connect with friends, track your statistics, and collect achievements and badges. Leaderboards and more social features are also on the roadmap!<br><br><blockquote>And the best part? Two games already exist! 🎮</blockquote><br><br>🔫 HELLVAULT - a Doom-inspired FPS where your notes become monsters and your vault turns into a battlefield.<br><br>🕹 Mini Old Games - 12 classic mini-games, including Snake, Tetris, 2048, Minesweeper, Flappy Bird, Breakout, Pong, Whack-a-Mole, Memory, Space Invaders, Sudoku, Simon.<br><br>Both games work independently and offline. Connecting to ObsiGama is completely optional, allowing you to sync your progress, statistics, and achievements to your gaming profile.<br><b><br></b><b>💜</b><b> And this is only the beginning!</b><br><br>My vision is to build an entire gaming ecosystem where developers can publish their own games, players can discover new experiences, and the Obsidian community can connect through gaming.<br><br><blockquote>After all, who said a note-taking app couldn't have its own gaming universe?</blockquote><br><br> Explore the project: 💎 <a href=\"https://community.obsidian.md/plugins/obsigama\" target=\"_blank\" rel=\"noopener noreferrer\">Obsidian</a>.md | 😺 <a href=\"https://github.com/NOMBER/ObsiGama\" target=\"_blank\" rel=\"noopener noreferrer\">Github</a><br><br>#Obsidian | #Gaming | #SecondBrain",
       "photos": [
         "data/media/7-p0.jpg"
@@ -26,8 +48,8 @@
       "id": 6,
       "url": "https://t.me/NomberObsidian/6",
       "date": "2026-11-20T20:52:58+00:00",
-      "views": "4",
-      "text_html": "<b>HELLVAULT is officially out! </b><b>🎮</b><b>💜</b><br><br>Who said Obsidian was only meant for taking notes?<br><br>My new open-source plugin turns your vault into a Doom-style FPS, where notes become monsters, broken links come alive, and a mysterious corruption threatens to erase everything!<br><br>Explore 5 unique zones, fight bosses, collect obsidian shards, and uncover hidden secrets. Choose between 3 game modes, wield 3 weapons, and unlock 21 achievements!<br><br>Play completely offline, with English and Russian support.<br><br>🗿 Download: <a href=\"https://community.obsidian.md/plugins/vault-shards\" target=\"_blank\" rel=\"noopener noreferrer\">Obsidian.md</a> | 🌐 <a href=\"https://github.com/NOMBER/HELLVAULT\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub Repository</a><br><br>/ <code>obsidian://show-plugin?id=vault-shards</code><br><br>#Obsidian | #Gaming | #SecondBrain",
+      "views": "7",
+      "text_html": "<b>HELLVAULT is officially out! </b><b>🎮</b><b>💜</b><br><br>Who said Obsidian was only meant for taking notes?<br><br>My new open-source plugin turns your vault into a Doom-style FPS, where notes become monsters, broken links come alive, and a mysterious corruption threatens to erase everything!<br><br>Explore 5 unique zones, fight bosses, collect obsidian shards, and uncover hidden secrets. Choose between 3 game modes, wield 3 weapons, and unlock 21 achievements!<br><br>Play completely offline, with English and Russian support.<br><br>🗿 Download: <a href=\"https://community.obsidian.md/plugins/vault-shards\" target=\"_blank\" rel=\"noopener noreferrer\">Obsidian.md</a> | 🌐 <a href=\"https://github.com/NOMBER/HELLVAULT\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub Repository</a><br><br>/ <code>obsidian://show-plugin?id=vault-shards</code><br><br>#Obsidian | #Gaming | #SecondBrain<br>— #HellVault@NomberObsidian",
       "photos": [
         "data/media/6-p0.jpg"
       ],
@@ -39,7 +61,7 @@
       "id": 5,
       "url": "https://t.me/NomberObsidian/5",
       "date": "2026-11-20T08:59:58+00:00",
-      "views": "4",
+      "views": "5",
       "text_html": "<b>Mini Old Games is officially out!</b> 🎮<br><br>Who said Obsidian has to be all about productivity?<br><br>My new plugin brings <b>12 classic mini-games</b> straight into your vault, including Snake, Tetris, 2048, Minesweeper, and more!<br><br>Play offline, choose your difficulty, track your stats, and unlock <b>67 achievements</b>. No ads, no accounts, just a little nostalgia whenever you need a break.<br><br>Available on desktop and mobile, with English and Russian support.<br><br>🗿 <b>Download:</b> <a href=\"https://community.obsidian.md/plugins/good-old-games\" target=\"_blank\" rel=\"noopener noreferrer\">Obsidian.md</a> | 🌐 <a href=\"https://github.com/NOMBER/Mini-Old-Games\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub Repository</a><br><br>/ <code>obsidian://show-plugin?id=good-old-games</code><br><br>#Obsidian | #SecondBrain",
       "photos": [
         "data/media/5-p0.jpg"
